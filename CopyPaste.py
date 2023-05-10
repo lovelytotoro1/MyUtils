@@ -95,7 +95,7 @@ class Copy_Paste(object):
             bboxs.append(box)
         
         # 随机copy模板的个数
-        copy_object_num = self.max_copy_num
+        copy_object_num = random.randint(self.max_copy_num)
 
         # 在 0~n-1 之间随机取copy_object_num个数
         random_list =  [random.randint(0, n-1) for _ in range(copy_object_num)]
